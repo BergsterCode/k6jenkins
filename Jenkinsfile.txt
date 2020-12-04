@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('Performance Testing') {
+            steps {
+                echo 'Running K6 performance tests...'
+                sh 'sudo chmod +x run_k6.sh'
+                sh 'sudo ./run_k6.sh'
+                echo 'K6 test are done'
+            }
+        }
+    }
+}
