@@ -1,14 +1,14 @@
 import http from "k6/http";
 import { group, check, sleep } from "k6";
 
-const BASE_URL = "https://172.17.0.1:8243/pizzashack/1.0.0";
+const BASE_URL = "";
 
 // Sleep duration between successive requests.
 // Edit the value of this variable or remove calls to the sleep function on the script.
 const SLEEP_DURATION = 0.1;
 
 // Global variables should be initialized.
-var authToken = "6117d72c-f8ac-391f-a030-18e74f77d35a";
+var authToken = "";
 
 let headers = {
   authorization: "Bearer " + authToken,
