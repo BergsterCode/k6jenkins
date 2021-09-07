@@ -1,14 +1,14 @@
 import http from "k6/http";
 import { group, check, sleep } from "k6";
 
-const BASE_URL = "https://apimgw-test.ia.icacorp.net/t/group.se/testjwtfromWSO2/V1.0.1/V1.0.1/echoHeaders";
+const BASE_URL = "";
 
 // Sleep duration between successive requests.
 // Edit the value of this variable or remove calls to the sleep function on the script.
 const SLEEP_DURATION = 0.1;
 
 // Global variables should be initialized.
-var authToken = "5bcb03ad-05fb-4cc1-aa68-9d10b8cef041";
+var authToken = "";
 
 let headers = {
   authorization: "Bearer " + authToken,
